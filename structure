@@ -1,0 +1,26 @@
+smartml-pro-reimpl/
+├── app.py                 # Streamlit entry
+├── requirements.txt
+├── README.md
+├── config.py
+├── src/
+│   ├── data/
+│   │   └── loader.py         # upload, read csv/xlsx
+│   ├── preprocessing/
+│   │   └── pipeline.py       # missing values, outliers, encoding, scaling
+│   ├── eda/
+│   │   └── eda_utils.py      # summary stats, plots
+│   ├── modeling/
+│   │   └── trainer.py        # ModelTrainer + wrappers for sklearn/XGBoost
+│   ├── explain/
+│   │   └── shap_wrapper.py   # SHAP value helper
+│   ├── predict/
+│   │   └── predictor.py      # batch predictions + CSV export
+│   └── utils/
+│       └── logger.py
+├── tests/
+│   ├── test_loader.py
+│   ├── test_pipeline.py
+│   └── test_trainer.py
+├── .github/workflows/ci.yml
+└── Dockerfile
